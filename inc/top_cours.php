@@ -2,7 +2,7 @@
     <h2>Top Cours</h2>
     <ul>
         <li>
-            <a href="#">
+            <a href="cours_details.php">
                 <img src="imgs/cours/1.png">
                 <h3>Description Du Cours</h3>
                 <h4>Prix : 10900FCFA</h4>

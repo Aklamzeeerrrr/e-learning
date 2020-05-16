@@ -1,23 +1,12 @@
+<?php
+    include("inc/fonction.php");
+?>
 <div id="header">
     <div id="up_head">
         <div id="lien">
-            <ul>
-                <li>
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                </li>
-                <li>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                </li>
-                <li>
-                    <a href="#"><i class="fab fa-google-plus"></i></a>
-                </li>
-                <li>
-                    <a href="#"><i class="fab fa-youtube"></i></a>
-                </li>
-                <li>
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                </li>
-            </ul>
+            <?php
+                echo head_lien();
+            ?>
         </div>
         <div id="date">
             <p>

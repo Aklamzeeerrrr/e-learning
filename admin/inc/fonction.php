@@ -105,8 +105,8 @@
         include("inc/db.php");
         if(isset($_POST['add_cat'])) {
              $cat_name=$_POST['cat_name'];
-
-            /** @var TYPE_NAME $con */
+             $cat_icone=$_POST['cat_icone'];
+             /** @var TYPE_NAME $con */
             $check= $con->prepare("select * from cat where cat_name='$cat_name'");
             $check->setFetchMode(PDO::FETCH_ASSOC);
             $check->execute();
@@ -116,7 +116,7 @@
                 echo"<script>alert('Catégorie Déjà Ajoutée')</script>";
                 echo"<script>window.open('index.php?cat','_self')</script>";
             }else{
-                $add_cat=$con->prepare("insert into cat(cat_name)values('$cat_name')");
+                $add_cat=$con->prepare("insert into cat(cat_name,cat_icone)values('$cat_name','$cat_icone')");
                 if($add_cat->execute()){
                     echo"<script>alert('Catégorie Ajoutée Avec Succès')</script>";
                     echo"<script>window.open('index.php?cat','_self')</script>";
@@ -142,23 +142,17 @@
             echo "<h3>Modifier Catégorie</h3>
                 <form id='modifier_form' method='post' enctype='multipart/form-data'>
                     <input type='text' name='cat_name' value='".$row['cat_name']."' placeholder='Entrer le Nom de la Catégorie Ici'/>
+                    <input type='text' name='cat_icone' value='".$row['cat_icone']."' placeholder='Entrer le Code Icone de la Catégorie Ici'/>
                     <center><button name='modifier_cat'>Modifier Catégorie</button></center>
                 </form>";
 
                 if (isset($_POST['modifier_cat'])){
+                    var_dump($_POST);
                     $cat_name=$_POST['cat_name'];
-
+                    $cat_icone=$_POST['cat_icone'];
                     /** @var TYPE_NAME $con */
-                    $check= $con->prepare("select * from cat where cat_name='$cat_name'");
-                    $check->setFetchMode(PDO::FETCH_ASSOC);
-                    $check->execute();
-                    $count=$check->rowCount();
 
-                    if($count==1){
-                        echo"<script>alert('Catégorie Déjà Ajoutée')</script>";
-                        echo"<script>window.open('index.php?cat','_self')</script>";
-                    }else{
-                        $up=$con->prepare("update cat set cat_name='$cat_name' where cat_id='$id'");
+                        $up=$con->prepare("update cat set cat_name='$cat_name', cat_icone='$cat_icone' where cat_id='$id'");
                         if($up->execute()){
                             echo"<script>alert('Catégorie Modifiée Avec Succès')</script>";
                             echo"<script>window.open('index.php?cat','_self')</script>";
@@ -166,7 +160,7 @@
                             echo"<script>alert('Catégorie Non Modifiée)</script>";
                             echo"<script>window.open('index.php?cat','_self')</script>";
                         }
-                    }
+
                 }
         }
     }
@@ -181,7 +175,7 @@
         while($row=$get_cat->fetch()):
             echo "<tr>
                     <td>".$i++."</td>
-                    <td>".$row['cat_name']."</td>
+                    <td>".$row['cat_icone']."".$row['cat_name']."</td>
                     <td>
                         <a  href='index.php?cat&modifier_cat=".$row['cat_id']."' title='Modifier'><i class='far fa-edit'></i></a>
                         <a style='color: #f00' href='index.php?cat&supp_cat=".$row['cat_id']."' title='Supprimer'><i class='far fa-trash-alt'></i></a>

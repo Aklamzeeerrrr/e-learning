@@ -12,9 +12,15 @@ body{
 }
 
 #header{
+    top: 0;
     width: 100%;
     height: 90px;
     background: #3f5267;
+    position: fixed;
+}
+
+#wrap{
+    margin-top: 90px;
 }
 
 #up_head{
@@ -139,7 +145,7 @@ body{
     transition: all 0.3s ease-in-out;
     border-left: 4px solid #fff;
     /*position: absolute !important;*/
-    margin-left: -28%;
+    margin-left: -20%;
     width: 100%;
     height: 40px;
     font-size: 14px;
@@ -550,6 +556,323 @@ body{
     transform: scale(1.1);
 }
 
+#crumb{
+    width: 96%;
+    box-shadow: 0px 0px 20px #ccc;
+    height: 35px;
+    line-height: 35px;
+    margin: 0% 2% 1% 2%;
+    padding-left: 2%;
+    padding-right: 2%;
+    box-sizing: border-box;
+    background: #fff;
+}
+
+#crumb span{
+    font-size: 14px;
+    color: #74889e;
+    margin-right: 1%;
+    margin-left: 0.5%;
+}
+
+#crumb span a{
+    text-decoration: none;
+    color: #06f;
+}
+
+#crumb span a:hover{
+    text-decoration: underline;
+}
+
+#crumb b{
+    font-weight: normal;
+    color: #74889e;
+}
+
+#panier_f{
+    width:40%;
+}
+
+#panier{
+    width: 96%;
+    margin: 2% 2% 1% 2%;
+    padding: 2%;
+    box-sizing: border-box;
+    background: #fff;
+}
+
+#panier table{
+    width: 100%;
+}
+
+#panier table tr th{
+    text-align: left;
+    padding-left: 2%;
+    box-sizing: border-box;
+    height: 35px;
+    background: #3d5267;
+    color: #fff;
+}
+
+#panier table tr td{
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    text-align: left;
+    font-size: 14px;
+    padding:1% 0% 1% 2%;
+    box-sizing: border-box;
+    color: #3f5267;
+}
+
+#panier table tr td img{
+    width: 80px;
+    height: 60px;
+    float: left;
+    margin-right: 2%;
+}
+
+#panier table tr td span{
+    float: left;
+    width: 80%;
+}
+
+#panier table tr td span a{
+    text-decoration: none;
+    color: #3f5267;
+    font-size: 13px;
+}
+
+#panier table tr td span a:hover{
+    text-decoration: underline;
+}
+
+#panier table tr td b{
+    font-weight: normal;
+    float: left;
+    font-size: 12px;
+    margin-top: 1%;
+}
+
+#panier table tr td b a{
+    text-decoration: none;
+    color: #f00;
+}
+
+#panier table tr td b a:hover{
+    text-decoration: underline;
+}
+
+#panier table tr td button{
+    transition: all 0.3s ease-in-out;
+    width: 48%;
+    height: 35px;
+    background: #3f5267;
+    border-width: 0px;
+    outline: none;
+    color: #fff;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+#panier table tr td button a{
+    display:block ;
+    text-decoration: none;
+    color: #fff;
+}
+
+#panier table tr td button:hover{
+    border-radius: 0px;
+}
+
+#cours_left{
+    height: 420px;
+    float: left;
+    margin: 1.5% 0% 2%  2%;
+    width: 48%;
+    padding: 2%;
+    box-sizing: border-box;
+    background: #fff;
+}
+
+#cours_left img{
+    width: 100%;
+    height: 320px;
+    border-radius: 5px;
+}
+
+#cours_partager{
+    width: 100%;
+    margin: 2% 0% 0% 0%;
+    padding: 0% 2% 0% 2%;
+    box-sizing: border-box;
+}
+
+#cours_partager button{
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    border-radius: 15px;
+    margin: 0% 0.5% 0% 05%;
+    width: 120px;
+    height: 35px;
+    outline: none;
+    border-width: 0px;
+}
+
+#cours_partager button a{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+}
+
+#cours_partager button:hover{
+    border-radius: 0px;
+}
+
+#cours_right{
+    height: 420px;
+    float: left;
+    margin: 1.5% 2% 2%  0%;
+    width: 48%;
+    padding: 2% 2% 2% 0%;
+    box-sizing: border-box;
+    background: #fff;
+}
+
+#cours_right h2{
+    padding-bottom: 3%;
+    margin-bottom: 3%;
+    box-sizing: border-box;
+    color: #3f5267;
+    font-weight: normal;
+    font-size: 20px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+#cours_right table{
+    width: 100%;
+}
+
+#cours_right table tr td{
+    height: 30px;
+
+}
+
+#cours_right table tr td:nth-child(1){
+    color: #3f5267;
+    width: 20%;
+    font-weight: bold;
+}
+
+#cours_right table tr td:nth-child(2){
+    width: 80%;
+    color: #74889e;
+}
+
+#prix{
+    margin-bottom: 2%;
+    line-height: 60px;
+    margin-top: 3%;
+    width: 100%;
+    height: 60px;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    border-bottom: 1px solid rgba(0,0,0,0.1)
+}
+
+#prix h3{
+    width: 100%;
+    color: #3f5267;
+    font-size: 22px;
+    font-weight: normal;
+}
+
+#prix h3 span{
+    font-size: 14px;
+    margin: 0% 2% 0% 2%;
+    text-decoration: line-through;
+}
+
+#prix h3 b{
+    margin-right: 2%;
+    font-weight: normal;
+    padding: 2% 1.5% 2% 1.5%;
+    border-radius: 100%;
+    box-sizing: border-box;
+    font-size: 14px;
+    background: #3f5267;
+    color: #fff;
+    text-align: center;
+}
+
+#cours_right form button{
+    font-weight: bold;
+    font-size: 12px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    text-transform: uppercase;
+    width: 48%;
+    height: 35px;
+    outline: none;
+    border-width: 0px;
+    background: #3f5267;
+    color: #fff;
+    border-radius: 15px;
+}
+
+#cours_right form button a{
+    text-decoration: none;
+    color: #fff;
+}
+
+#cours_right form button:hover{
+    border-radius: 0px;
+}
+
+#c_desc{
+    float: left;
+    margin: 0% 2% 2% 2%;
+    width: 66%;
+    padding: 2%;
+    box-sizing: border-box;
+    background: #fff;
+}
+
+#c_desc h2 {
+    color: #3f5267;
+    font-weight: normal;
+}
+
+#c_desc p{
+    color: #74889e;
+    font-size: 16px;
+    line-height: 25px;
+    margin: 2% 0% 2% 0%;
+}
+
+
+
+#c_desc img{
+    float: left;
+    margin: 2% 4% 2% 0%;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 0px  20px #2e2e2e;
+    width: 20%;
+    height: 200px;
+    border-radius: 100%;
+}
+
+#c_desc img:hover{
+    border-radius: 0px;
+    box-shadow: none;
+}
+
+#c_rel{
+    float: left;
+    width: 28%;
+    padding: 2% 2% 2% 0%;
+    box-sizing: border-box;
+    background: #fff;
+}
+
 #footer{
     width: 100%;
     background: #3f5267;
@@ -671,6 +994,10 @@ body{
 
 #f_input input::-webkit-input-placeholder{
     color: #3f5267 !important;
+}
+
+#w{
+    background: #25D366;
 }
 
 #tw{

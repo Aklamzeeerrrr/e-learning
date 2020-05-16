@@ -11,6 +11,7 @@
             <summary>Ajouter Catégorie</summary>
             <form method="post" enctype="multipart/form-data">
                 <input type="text" name="cat_name" placeholder="Entrer le Nom de la Catégorie Ici"/>
+                <input type="text" name="cat_icone" placeholder="Entrer le Code de l'Icône de la Catégorie Ici"/>
                 <center><button name="add_cat">Ajouter Catégorie</button></center>
             </form> 
         </details>

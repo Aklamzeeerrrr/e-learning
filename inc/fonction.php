@@ -198,10 +198,44 @@ Des connaissances de base en HTML + CSS sont utiles, mais ne sont PAS nécessair
                         <button id='gp'><a href='#'><i class='fab fa-google-plus'></i></a></button>
                         <button id='tw'><a href='#'><i class='fab fa-twitter'></i></a></button>
                         <button id='w'><a href='#'><i class='fab fa-whatsapp'></i></a></button>
-                    </div>
+                    </div><br clear='all'>
+                    <h2>Contenu Du Cours</h2>
+                    <ul>
+                        <li><i class='fas fa-video'></i> <span>1. Introduction</span></li>
+                        <li><i class='fas fa-video'></i> <span>2. Facultatif: JavaScript - Une Mise A Jour Rapide</span></li>
+                        <li><i class='fas fa-video'></i> <span>3. Comprendre Les Bases</span></li>
+                        <li><i class='fas fa-video'></i> <span>4. Amélioration Du Proceccus De Développement Et Du Débogage</span></li>
+                        <li><i class='fas fa-video'></i> <span>5. Travailler Avec Express.js</span></li>
+                        <li><i class='fas fa-video'></i> <span>6. Travailler Avec Du Contenu  Dynamique & Ajouter Des Moteurs De Template</span></li>
+                        <li><i class='fas fa-video'></i> <span>7. Le Model View Controller(MVC)</span></li>
+                        <li><i class='fas fa-video'></i> <span>8. Facultatif: Améliorer l'Application</span></li>
+                        <li><i class='fas fa-video'></i> <span>9. Itinéraires Dynamiques & Modèles Avancés</span></li>
+                        <li><i class='fas fa-video'></i> <span>10. Introduction SQL</span></li>
+                    </ul>
               </div>
               <div id='c_rel'>
-              
+                    <h2>Cours Liés</h2>
+                    <ul>
+                        <li>
+                            <a href='#'>
+                                <img src='imgs/cours/vueJs.jpg'>
+                                <p>DEVELOPPEZ DE BELLES INTERFACES AVEC VUEJS</p><br clear='all'>
+                            </a>
+                        </li>
+                        <li>
+                            <a href='#'>
+                                <img src='imgs/cours/htmlCss.jpeg'>
+                                <p>CONCEVEZ DES SITES WEB DYNAMIQUES AVEC HTML5 & CSS3</p><br clear='all'>
+                            </a>
+                        </li>
+                        <li>
+                            <a href='#'>
+                                <img src='imgs/cours/mongoDb.jpg'>
+                                <p>MONGODB PAR LA PRATIQUE</p><br clear='all'>
+                            </a>
+                        </li>
+                        
+                    </ul>
               </div><br clear='all'>";
     }
 ?>

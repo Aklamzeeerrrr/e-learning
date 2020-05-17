@@ -19,22 +19,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3a5594f5-82e2-4f18-8ada-bf8aa6e665e3" name="Default Changelist" comment="Partie utilisateur">
-      <change afterPath="$PROJECT_DIR$/cours_details.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imgs/cours/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imgs/cours/aklam.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inc/db.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inc/fonction.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/panier.php" afterDir="false" />
+    <list default="true" id="3a5594f5-82e2-4f18-8ada-bf8aa6e665e3" name="Default Changelist" comment=" Partie utilisateur again">
+      <change afterPath="$PROJECT_DIR$/imgs/cours/htmlCss.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgs/cours/mongoDb.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgs/cours/vueJs.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/cat.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/cat.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/inc/fonction.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/inc/fonction.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inc/cat_menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/cat_menu.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inc/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inc/home_cat.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/home_cat.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inc/top_cours.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/top_cours.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inc/fonction.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/fonction.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +99,7 @@
       <workItem from="1588942203601" duration="28098000" />
       <workItem from="1589298422645" duration="4553000" />
       <workItem from="1589329549591" duration="8405000" />
-      <workItem from="1589425033489" duration="44020000" />
+      <workItem from="1589425033489" duration="55621000" />
     </task>
     <task id="LOCAL-00001" summary="partie &quot;TERMES &amp; CONDITION&quot;">
       <created>1587609685102</created>
@@ -138,7 +129,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589155693321</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary=" Partie utilisateur again">
+      <created>1589603098502</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1589603098502</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -162,7 +160,8 @@
     <MESSAGE value="parie contact, FAQs et apropos" />
     <MESSAGE value="modif de la fonction apropos" />
     <MESSAGE value="Partie utilisateur" />
-    <option name="LAST_COMMIT_MESSAGE" value="Partie utilisateur" />
+    <MESSAGE value=" Partie utilisateur again" />
+    <option name="LAST_COMMIT_MESSAGE" value=" Partie utilisateur again" />
   </component>
   <component name="WindowStateProjectService">
     <state x="392" y="71" key="#Plugins" timestamp="1589329735984">
